@@ -1,2 +1,2 @@
 # s24-group12
-# group members: Cindy Chou
+# group members: Cindy Chou Alissa Rogozin
