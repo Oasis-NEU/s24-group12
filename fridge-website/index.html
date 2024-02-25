@@ -1,14 +1,124 @@
-<!doctype html>
+<!DOCTYPE HTML>
+
+<!--
+THINGS THAT SITLL NEED TO HAPPEN
+
+1. replace infowindow with the flex boxes on the right side of the screen that will come up, also, make the three top rated fridges the default.
+2. figure out how to make excess information not show up (like museums, restaurants, etc.)
+3. let the user see their own location on the map to find what is closest to them
+4.find 4 small pin icons for 4 statuses (good, eh, bad, and unknown)
+5. play around with api to see what settings users should have access to.
+6. figure out how to make addMarker() just take in a whole database, and perform the function on every line
+
+THINGS THAT HAVE HAPPENED
+
+1. figure out how to get an API key from google developer and use that to embed google maps (we are not using the iframe, it would have reduced out potential functionality way too much)
+2. learn how to load the map onto the page with specific sizing (to leave room for infocards on the side)
+3. make markers and give them coordinates, icons (ive not done this yet bc we need icons), and infomation.
+4. place markers for all data we have atm
+-->
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xG1XkK0ZYafJAXLff-dYtW-T2qaJ9Nc&ehbc=2E312F" width="640" height="480"></iframe>
-    <script type="module" src="/src/main.tsx"></script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--<title> map </title>-->
+	<style>
+		html, body{
+			height:100%;
+			width:100%;
+		}
+		#map{
+			height:100%;
+			width:70%;
+		}
+	</style>
+
+</head>
+<body>
+	<h1> map </h1>
+	<div id="map"></div>
+	<script>
+		function initMap() {
+		  const myLatLng = { lat: 42.3417693846565, lng: -71.0809184163622};
+		  const map = new google.maps.Map(document.getElementById("map"), {
+		    zoom: 12,
+		    center: myLatLng,
+		  });
+
+		addMarker({
+			coords:{ lat: 42.3488, lng: -71.1551},
+			content:'<p>Brighton Center Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.353046445239784, lng: -71.16014547403375},
+			content:'<p>Faneuil St Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.37807453541723, lng: -71.05679833170483},
+			content:'<p>New Health<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.347672017000896, lng: -71.10597497793833},
+			content:'<p>Faneuil St Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.34196208228627, lng: 71.08763367666609},
+			content:'<p>Boston University Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.353046445239784, lng: -71.16014547403375},
+			content:'<p>Northeastern Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.31255835028159, lng: -71.11397191636335},
+			content:'<p>Jamaica Plains Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.27978855405722, lng: -71.09266213170876},
+			content:'<p>Mattapan Fridge<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.28866560758116, lng: -71.12590674890467},
+			content:'<p>Roslindale<p>'
+		});
+
+		addMarker({
+			coords:{ lat: 42.3417693846565, lng: -71.0809184163622},
+			content:'<p>South End<p>'
+		});
+
+			function addMarker(props){
+			  var marker = new google.maps.Marker({
+			    position: props.coords,
+			    //icon: props.icon
+			    map,
+			  });
+
+			  if(props.content){
+			  	var infoWindow = new google.maps.InfoWindow({
+			  		content:props.content
+			  	});
+
+			  	marker.addListener("click", function(){
+			  		infoWindow.open(map, marker);
+			  	});
+			  }
+			}
+		}
+
+	</script>
+ 	<script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK3LakQIKXffdoKBKeLvsK7UCOwXUEjvw&callback=initMap">
+    </script>
   </body>
-</html>
+  </html>
