@@ -20,7 +20,7 @@ const center = {
 
 const CustomMap = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyDK3LakQIKXffdoKBKeLvsK7UCOwXUEjvw',
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_API_KEY,
   });
 
   if (loadError) {
