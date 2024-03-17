@@ -1,3 +1,7 @@
+# How To Run Project 
+
+Since this project uses the Google Maps API (and maybe other API keys and secrets), you would need to create a copy of the `.env.example` file and rename it `.env`. Then, copy-paste the credentials from someone who has them. This prevents exposing API keys to public repositories on the internet!
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
