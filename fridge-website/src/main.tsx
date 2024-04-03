@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import CustomMap from './pages/CustomMap.tsx'
+import App from './App.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <CustomMap />
+    <App />
   </React.StrictMode>,
 )

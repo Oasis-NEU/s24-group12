@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GoogleMap, useLoadScript, MarkerF, InfoWindow } from '@react-google-maps/api';
+import "../../main.css";
 
 const mapContainerStyle = {
   width: '80vw',
@@ -45,27 +46,27 @@ const CustomMap = () => {
     return <div>Loading maps</div>;
   }
 
-  const handleMarkerClick = (location) => {
-    setSelectedLocation(location);
-    const collapsibles = document.getElementsByClassName('collapsible');
-    for (let i = 0; i < collapsibles.length; i++) {
-        if (collapsibles[i].id === location.name) {
-            collapsibles[i].classList.toggle('active');
-            collapsibles[i].classList.toggle('activeq');
-           // collapsibles[i].classList.toggle('activeq');
-            const content = collapsibles[i].nextElementSibling;
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'block';
-            }
-        }
-    }
-};
+//   const handleMarkerClick = (location) => {
+//     setSelectedLocation(location);
+//     const collapsibles = document.getElementsByClassName('collapsible');
+//     for (let i = 0; i < collapsibles.length; i++) {
+//         if (collapsibles[i].id === location.name) {
+//             collapsibles[i].classList.toggle('active');
+//             collapsibles[i].classList.toggle('activeq');
+//            // collapsibles[i].classList.toggle('activeq');
+//             const content = collapsibles[i].nextElementSibling;
+//             if (content.style.display === 'block') {
+//                 content.style.display = 'none';
+//             } else {
+//                 content.style.display = 'block';
+//             }
+//         }
+//     }
+// };
 
 
   return (
-    <div>
+    <div className="leftcolumn">
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={13}

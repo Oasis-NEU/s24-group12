@@ -58,15 +58,14 @@ Light Green: C1F2AE
     text-align: center;
     background: white;
   }
-  #leftcolumn {
+  .leftcolumn {
     float: left;
     width: 70%;
     height: 100vh;
     max-height:100%;
     overflow-y: hidden;
-
   }
-  #rightcolumn {
+  .rightcolumn {
     float: left;
     width: 30%;
     height: 100vh;
@@ -75,8 +74,10 @@ Light Green: C1F2AE
     overflow-y: scroll;
   }
 
-  #page-wrap{
+  .page-wrap{
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
   }
 
   .card-good {
