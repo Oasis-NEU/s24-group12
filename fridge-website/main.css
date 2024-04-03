@@ -1,0 +1,153 @@
+/* colors :)
+Light Blue: E4F2F2
+EcoAssist Blue: 317087
+EcoAssist Green: 78CA63
+Light Green: C1F2AE
+*/
+#myNavbar{
+    z-index: 99;
+    position: sticky;
+    width:100%;
+    top: 0;
+    left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #317087;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: #E4F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #E4F2F2;
+    color: #317087;
+  }
+  .row:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+  /* -------------------- */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial;
+    padding: 0px;
+    background: #ffffff;
+    /* overflow-y: hidden; */
+  }
+
+  .header {
+    padding-top: 10px;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  #leftcolumn {
+    float: left;
+    width: 70%;
+    height: 100vh;
+    max-height:100%;
+    overflow-y: hidden;
+
+  }
+  #rightcolumn {
+    float: left;
+    width: 30%;
+    height: 100vh;
+    padding-left: 5px;
+    max-height:100%;
+    overflow-y: scroll;
+  }
+
+  #page-wrap{
+    overflow: hidden;
+  }
+
+  .card-good {
+     background-color: #b9ffb3;
+     padding: 20px;
+     margin-bottom:20px;
+  }
+
+  .card-closed {
+    background-color: #ffb9b3;
+    padding: 20px;
+    margin-bottom:20px;
+ }
+
+ .card-unknown {
+  background-color: #e6e6e6;
+  padding: 20px;
+  margin-bottom:20px;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  } */
+
+  /* ----------------------------- */
+.collapsible:after {
+  content: '+';
+  color: #000000;
+  font-size: 35px;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeq:after {
+  content: "-";
+  color: #000000;
+}
+
+.collapsible {
+  /* background-color: #317087; */
+  color: #000000;
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+.active{
+  background-color: #4393b0;
+  color: #000000;
+}
+.collapsible:hover {
+  /* background-color: #4393b0; */
+  color: #000000;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+/* ------------ */
+  /* ----------------------------- */
