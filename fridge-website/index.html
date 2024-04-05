@@ -27,6 +27,12 @@ THINGS THAT HAVE HAPPENED
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e6cda8023e.js" crossorigin="anonymous"></script>
+
 	<!--<title> map </title>-->
 	<!-- <style>
 		html, body{
@@ -40,7 +46,29 @@ THINGS THAT HAVE HAPPENED
 	</style> -->
 
 </head>
-<body>
+<body style = "background-color: #f1f1f1;">
+	
+	<div class="nav">
+		<div class="logo">
+		  Company Title
+		</div>
+		<div class="menu">
+		  <a href="#" class="link">
+			<div class="title">About</div>
+			<div class="bar"></div>
+		  </a>
+		  <a href="#" class="link">
+			<div class="title">Request</div>
+			<div class="bar"></div>
+		  </a>
+		  <a href="#" class="link">
+			<div class="title">Contact</div>
+			<div class="bar"></div>
+		  </a>
+		</div>
+	  </div>
+
+
 	<div id="page-wrap">
 		<div id="leftcolumn">
 			<div id="root"></div>
@@ -48,8 +76,12 @@ THINGS THAT HAVE HAPPENED
 		</div>
 
 		<div id="rightcolumn">
-			<button id="New Health" type="button" style="background-color:#b9ffb3" class="collapsible">New Health Fridge</button>
+
+			<button id="New Health" type="button" class="collapsible">New Health Fridge
+				<i class="fa-solid fa-chevron-down"></i>
+			</button>
 				<div class="content">
+					
   					<p>Status: Active</p>
 					<p>Neighborhood: Charlestown</p>
 					<p>Address: 15 Tufts St</p>
@@ -57,7 +89,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="Northeastern" type="button" style="background-color:#b9ffb3" class="collapsible">NU Fridge</button>
+			<button id="Northeastern" type="button" class="collapsible">NU Fridge</button>
 				<div class="content">
 					<p>Status: Active</p>
 					<p>Neighborhood: Fenway</p>
@@ -66,7 +98,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="Faneuil St" type="button" style="background-color:#e6e6e6" class="collapsible">Faneuil St Fridge</button>
+			<button id="Faneuil St" type="button" class="collapsible">Faneuil St Fridge</button>
 				<div class="content">
 					<p>Status: Unsure</p>
 					<p>Neighborhood: Brighton</p>
@@ -75,7 +107,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="Brighton Center" type="button" style="background-color:#e6e6e6" class="collapsible">Brighton Center Fridge</button>
+			<button id="Brighton Center" type="button"  class="collapsible">Brighton Center Fridge</button>
 				<div class="content">
 					<p>Status: Unsure</p>
 					<p>Neighborhood: Brighton</p>
@@ -84,7 +116,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="Jamaica Plain" type="button" style="background-color:#e6e6e6" class="collapsible">Jamaica Plain</button>
+			<button id="Jamaica Plain" type="button" class="collapsible">Jamaica Plain</button>
 				<div class="content">
 					<p>Status: Unsure</p>
 					<p>Neighborhood: Jamaica Plain</p>
@@ -93,7 +125,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="BU" type="button" style="background-color:#ffb9b3" class="collapsible">BU Fridge</button>
+			<button id="BU" type="button"class="collapsible">BU Fridge</button>
 				<div class="content">
 					<p>Status: Closed</p>
 					<p>Neighborhood: Fenway</p>
@@ -102,7 +134,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="Mattapan" type="button" style="background-color:#ffb9b3" class="collapsible">Mattapan Fridge</button>
+			<button id="Mattapan" type="button" class="collapsible">Mattapan Fridge</button>
 				<div class="content">
 					<p>Status: Closed</p>
 					<p>Neighborhood: Mattapan</p>
@@ -111,7 +143,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="Roslindale" type="button" style="background-color:#ffb9b3" class="collapsible">Roslindale Fridge</button>
+			<button id="Roslindale" type="button"  class="collapsible">Roslindale Fridge</button>
 				<div class="content">
   					<p>Status: Closed</p>
 					<p>Neighborhood: Roslindale</p>
@@ -120,7 +152,7 @@ THINGS THAT HAVE HAPPENED
 					<p> </p>
 				</div>
 			<p></p>
-			<button id="South end" type="button" style="background-color:#ffb9b3" class="collapsible">South End Fridge</button>
+			<button id="South end" type="button"  class="collapsible">South End Fridge</button>
 				<div class="content">
 					<p>Status: Closed</p>
 					<p>Neighborhood: South End</p>
