@@ -74,6 +74,8 @@ Light Green: C1F2AE
   } */
 
   /* ----------------------------- */
+
+  
 .collapsible:after {
   
    content: "\2b";
@@ -149,13 +151,18 @@ Light Green: C1F2AE
   font-style: normal;
 
   background-color: #f1f1f1;
-  
+
   width: 100%;
   
   text-align: right;
   position: relative;
   
   .logo {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(60, 60, 60);
+    
     position: absolute;
     top: 0;
     left: 0;
